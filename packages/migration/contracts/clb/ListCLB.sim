@@ -1,0 +1,11 @@
+// +prop AppID = '1'
+// +prop Conditions = 'ContractConditions("MainCondition")'
+contract ListCLB {
+		data {}
+	
+		conditions {}
+	
+		action {
+			$result = GetCLBList()
+		}
+	}

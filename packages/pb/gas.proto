@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option go_package = "github.com/IBAX-io/go-ibax/packages/smart";
+
+package smart;
+
+enum PaymentType {
+  INVALID = 0;
+  ContractCaller = 1;
+  ContractBinder = 2;
+  EcosystemAddress = 3;
+}
+
+enum GasScenesType {
+  Unknown = 0;
+  Reward = 1;
+  Taxes = 2;
+  Direct = 15;
+  Combustion = 16;
+  TransferSelf =  24;
+}
+
+enum GasPayAbleType {
+  Invalid = 0;
+  Unable = 1;
+  Capable = 2;
+}
+
+enum FuelType {
+  UNKNOWN = 0;
+  vmCost_fee = 1;
+  storage_fee = 2;
+  expedite_fee = 3;
+}
+enum Arithmetic {
+  NATIVE = 0;
+  MUL = 3;
+  DIV = 4;
+}
